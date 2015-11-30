@@ -1,0 +1,15 @@
+
+
+<div id="map_canvas" ng-controller="MainController">
+    <script type="text/ng-template" id="searchbox.tpl.html">
+        <input type="text" placeholder="Search Box" style="width: 300px; height: 33px; margin-top: 10px" ng-model="newMap.name" value="">
+    </script>
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+        <ui-gmap-search-box id="searchBox" template="searchbox.template" events="searchbox.events"></ui-gmap-search-box>
+    </ui-gmap-google-map>
+</div>
+
+<div>
+<!-- <input id="pac-input" class="controls" type="text" placeholder="Search Box"> -->
+</div>
+ <div id="map"></div>
